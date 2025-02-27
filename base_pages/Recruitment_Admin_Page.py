@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from test_cases.TC1_admin_login import Test_01_Admin_login
 
-
+# This is the Recruitment Admin Page Class Code
 class Recruitment_Admin_Page:
     admin_page_url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
     textbox_first_name = "mian"
