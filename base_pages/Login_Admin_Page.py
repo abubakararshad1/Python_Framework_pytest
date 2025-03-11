@@ -9,7 +9,7 @@ class Login_Admin_Page:
     textbox_username_name = "username"
     textbox_password_name = "password"
     btn_login_xpath = "//button[@type='submit']"
-    admin_page_url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    #admin_page_url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 
     # Provided Data
     # username = "Admin"
@@ -44,20 +44,3 @@ class Login_Admin_Page:
         )
         login_button.click()
 
-    # def User_Login_Verification(self):
-    #     self.driver.get(self.admin_page_url)
-    #     self.enter_username(self.username)
-    #     self.enter_password(self.password)
-    #     self.click_login()
-
-
-# if __name__ == "__main__":
-#     # Step 1: Initialize the WebDriver (Assuming you're using Chrome here)
-#     driver = webdriver.Chrome()  # Make sure chromedriver is installed and accessible
-#
-#     # Step 2: Create an object of Login_Admin_Page class and pass the driver to it
-#     login_page = Login_Admin_Page(driver)
-#     login_page.User_Login_Verification()
-#     time.sleep(25)
-#     driver.quit()
-#     # Step 3: Call the methods in the class to perform the login actions

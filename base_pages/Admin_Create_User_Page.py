@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class Admin_Sidebar:
+class Admin_Create_User:
     textbox_username_name = "username"
     textbox_password_name = "password"
     btn_login_xpath = "//button[@type='submit']"
@@ -58,15 +58,6 @@ class Admin_Sidebar:
         )
         time.sleep(5)
         select_role_field.click()
-
-        # user_role_field = self.driver.find_element(By.XPATH, "(//div[@class='oxd-select-text-input'])[1]")
-        # time.sleep(5)
-        # user_role_field.click()
-        # time.sleep(5)
-        # elements = self.driver.find_element(By.XPATH, "//div[@role='option'][2]")
-        # elements.click()
-
-        time.sleep(5)
 
     def enter_empname(self, empname):
         # Wait for the password field to be visible before interacting
